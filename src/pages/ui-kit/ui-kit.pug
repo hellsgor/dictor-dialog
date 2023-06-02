@@ -2,12 +2,27 @@ extends Layouts/main-layout.pug
 
 block variables
   - let title = 'UI-kit';
-  - let withHeaderFooter = true;
+  - let withHeaderFooter = false;
   - let pageClassName = 'UI-kit';
 
 block styles
   link(href=require('./ui-kit.scss') rel='stylesheet')
 block content
   main.page__main(class=pageClassName)
+
+    .container
+
+      h1 UI-kit
+
+      .component
+        h2 Button
+
+        .component__inner
+          include Components/button/button.pug
+          +button('button', 'small-primary-button', 'small primary button', 'button_small', '', 'button_primary')
+          +button('button', 'big-primary-button', 'big primary button', 'button_big', '', 'button_primary')
+          +button('button', 'small-secondary-button', 'small secondary button', 'button_small', '', 'button_secondary')
+          +button('button', 'big-secondary-button', 'big secondary button', 'button_big', '', 'button_secondary')
+
 block scripts
   script(src=require('./ui-kit.js') defer)
