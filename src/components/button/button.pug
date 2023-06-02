@@ -1,0 +1,9 @@
+mixin button(tag='button', name, text, smallOrBigModifier, iconFileName='', modifier='button_primary')
+  #{tag}.button(name=name class=modifier class=smallOrBigModifier)&attributes(attributes)
+    .button__inner
+
+      if (iconFileName === 'play')
+        .button__icon
+          include Icons/play.pug
+
+      span&attributes(attributes) #{text}
