@@ -1,0 +1,8 @@
+@import 'Styles/_variables.scss';
+
+@function rem($pixels, $context: $baseFontSize) {
+  $pixels: if(unitless($pixels), $pixels * 1px, $pixels);
+  $context: if(unitless($context), $context * 1px, $context);
+
+  @return calc($pixels / $context) * 1rem;
+}
