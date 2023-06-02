@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bebas Neue'), url('Fonts/BebasNeue-Regular.ttf') format('ttf'),
+  local('Bebas Neue'), url('Fonts/BebasNeue-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Manrope Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Manrope Regular'), url('Fonts/Manrope-Regular.ttf') format('ttf'),
+  local('Manrope Regular'), url('Fonts/Manrope-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Manrope Medium';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Manrope Medium'), url('Fonts/Manrope-Medium.ttf') format('ttf'),
+  local('Manrope Medium'), url('Fonts/Manrope-Medium.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Manrope SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Manrope SemiBold'), url('Fonts/Manrope-SemiBold.ttf') format('ttf'),
+  local('Manrope SemiBold'), url('Fonts/Manrope-Semibold.woff2') format('woff2');
+}
