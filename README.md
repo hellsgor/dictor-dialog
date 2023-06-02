@@ -12,13 +12,6 @@ pug / scss / js / webpack / esLint / prettier / autoprefixer
 4. [Файловая структура](#a-namefile-structure-файловая-структура-a)
 5. [Alias'ы](#a-namealias-aliasы-a)
 6. [Советы и правила](#a-nametips-and-rules-советы-и-правила-a)
-7. [История версий](#a-nameversion-history-история-версий-a)
-
-    - [v.0.1.0](#a-name010-v010-a)
-    - [v.0.2.0](#a-name020-v020-a)
-    - [v.0.3.1](#a-name031-v031-a)
-    - [v.0.3.2](#a-name032-v032-a)
-    - [v.0.3.3](#a-name033-v033-a)
 
 ---
 
