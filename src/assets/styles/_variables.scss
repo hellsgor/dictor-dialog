@@ -1,2 +1,27 @@
 // font:
 $baseFontSize: 16px;
+
+
+// colors:
+$black: black;
+$white: white;
+$white-with-opacity-80: rgba(255, 255, 255, 0.8);
+
+// main backgrounds
+$page-background-color: #2C2C2C;
+$block-background-color: #444444;
+
+// radius
+$buttons-radius: 79px;
+
+// gradients
+$primary-button-gradient: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%);
+$secondary-button-background-color: $white-with-opacity-80;
+
+// shadows
+$primary-button-hover-shadow: 7px 7px 12px rgba(0, 0, 0, 0.11), 2px 3px 5px rgba(0, 0, 0, 0.2), inset -7px -9px 10px rgba(0, 0, 0, 0.3);
+$secondary-button-hover-shadow: 5px 5px 6px rgba(0, 0, 0, 0.1), 2px 3px 5px rgba(0, 0, 0, 0.14), inset -1px -3px 3px rgba(0, 0, 0, 0.27);
+
+// timing
+$button-hover-shadow-on: 150ms;
+$button-hover-shadow-off: 500ms;
