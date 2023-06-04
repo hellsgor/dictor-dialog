@@ -55,13 +55,14 @@ button, .button {
   @media (hover: hover) {
     &_primary {
       &:hover {
-        box-shadow: $primary-button-hover-shadow;
+        box-shadow: $primary-hover-shadow;
         transition: box-shadow ease-in-out $button-hover-shadow-on;
       }
     }
     &_secondary {
       &:hover {
-        box-shadow: $secondary-button-hover-shadow;
+        box-shadow: $secondary-hover-shadow;
+        transition: box-shadow ease-in-out $button-hover-shadow-on;
       }
     }
 

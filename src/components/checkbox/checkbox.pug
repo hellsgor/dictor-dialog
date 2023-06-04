@@ -1,0 +1,12 @@
+mixin checkbox(name, id, text, linkText, href, required=false, checked=false, disabled=false)
+  .checkbox
+    input(type='checkbox', name=name, id=id, required=required, checked=checked, disabled=disabled)&attributes(attributes)
+    label(for=id)
+      .checkbox__inner
+        .checkbox__rounding
+          .checkbox__box
+          .checkbox__check
+            include Icons/checkbox-check.pug
+
+      span.text-bold #{text}
+        a.text-link_underline(href=href) #{linkText}

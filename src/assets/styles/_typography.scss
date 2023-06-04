@@ -38,6 +38,17 @@ body, p, .text-medium {
   }
 }
 
+a, a.text-link {
+
+  &_underline {
+    text-decoration: underline;
+  }
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
 h1, h2, h3, h4, h5 {
   font-style: normal;
 }

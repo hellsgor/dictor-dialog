@@ -16,13 +16,20 @@ block content
 
       .component
         h2 Button
-
         .component__inner
           include Components/button/button.pug
           +button('button', 'small-primary-button', 'small primary button', 'button_small', '', 'button_primary')
           +button('button', 'big-primary-button', 'big primary button', 'button_big', '', 'button_primary')
           +button('button', 'small-secondary-button', 'small secondary button', 'button_small', '', 'button_secondary')
           +button('button', 'big-secondary-button', 'big secondary button', 'button_big', '', 'button_secondary')
+
+      .component
+        h2 Check-box
+        .component__inner
+          include Components/checkbox/checkbox.pug
+          +checkbox('test-checkbox','test-checkbox-id', 'Some text ', 'Some text link in checkbox text', '#' )
+          +checkbox('test-disabled-checkbox','disabled-checkbox-id', 'Some text ', 'Some text link in checkbox text', '#', false, true, true)
+
 
 block scripts
   script(src=require('./ui-kit.js') defer)
