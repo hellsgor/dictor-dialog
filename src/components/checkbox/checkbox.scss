@@ -1,0 +1,94 @@
+@import 'Styles/_functions.scss';
+
+.checkbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+  }
+
+  &__rounding {
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 19px;
+    height: 19px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: $primary-button-gradient;
+    transition: box-shadow ease-in-out $button-hover-shadow-off;
+  }
+
+  &__check {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: rem(7.25);
+    cursor: pointer;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  }
+
+  input[type=checkbox]:checked ~ label {
+    .checkbox__check {
+      display: block;
+    }
+  }
+
+  input[type=checkbox]:disabled ~ label {
+
+    span {
+      color: $disabled-text-color;
+    }
+
+    .checkbox__box {
+      border-image-source: $primary-disabled-gradient;
+    }
+
+    .checkbox__check {
+      svg {
+        path {
+          fill: $checkbox-disabled-check-icon-color;
+        }
+      }
+    }
+  }
+
+  @media(hover: hover) {
+    &:hover {
+      &__box {
+        box-shadow: $primary-hover-shadow;
+        transition: box-shadow ease-in-out $button-hover-shadow-on;
+      }
+    }
+  }
+}
