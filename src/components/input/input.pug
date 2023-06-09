@@ -1,0 +1,12 @@
+mixin input(name, type, placeholder, disabled=false, required=true)
+  .input
+    .input__border
+      input.text-regular(name=name, id=name+'-id', type=type, placeholder=placeholder, disabled=disabled, required=required)
+
+    if type === 'password'
+      .input__password-icons
+        .input__icon.input__icon_visible
+          include Icons/do-visible.pug
+        .input__icon
+          include Icons/do-unvisible.pug
+

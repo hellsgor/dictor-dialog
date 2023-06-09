@@ -35,6 +35,13 @@ block content
         .component__inner
           include Components/basket-icon/basket-icon.pug
 
+      .component
+        h2 Input
+        .component__inner
+          include Components/input/input.pug
+          +input('some-text-input', 'text', 'Text input')
+          +input('some-password-input', 'password', 'Enter password')
+
 
 block scripts
   script(src=require('./ui-kit.js') defer)

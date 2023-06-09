@@ -12,6 +12,8 @@ $disabled-text-color: darkgray;
 $checkbox-disabled-check-icon-color: lightgray;
 $icons-background-color: #444444;
 $active-color: #D40A59;
+$input-background-color-desktop: #EBEBEB;
+$input-placeholder-color: #444444;
 
 // main backgrounds
 $page-background-color: #2C2C2C;
@@ -22,6 +24,7 @@ $buttons-radius: 79px;
 
 // gradients
 $primary-button-gradient: linear-gradient(255.03deg, #CE035A 4.5%, #FD3950 91.04%);
+$input-border-gradient: $primary-button-gradient;
 $primary-disabled-gradient: linear-gradient(255.03deg, darkgray, lightgray);
 
 // shadows
