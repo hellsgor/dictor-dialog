@@ -30,6 +30,11 @@ block content
           +checkbox('test-checkbox','test-checkbox-id', 'Some text ', 'Some text link in checkbox text', '#' )
           +checkbox('test-disabled-checkbox','disabled-checkbox-id', 'Some text ', 'Some text link in checkbox text', '#', false, true, true)
 
+      .component
+        h2 Basket-icon
+        .component__inner
+          include Components/basket-icon/basket-icon.pug
+
 
 block scripts
   script(src=require('./ui-kit.js') defer)

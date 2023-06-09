@@ -1,0 +1,60 @@
+@import 'Styles/_variables.scss';
+
+.basket {
+  padding: 6px 18px;
+  background-color: $white-with-opacity-80;
+  border-radius: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 10px;
+  cursor: pointer;
+
+  &__icon {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      path {
+        fill: $icons-background-color;
+      }
+    }
+
+    &_active {
+      svg {
+        path {
+          fill: $active-color;
+        }
+      }
+    }
+  }
+
+  &__count {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 22px;
+
+    span {
+      margin-top: 5px;
+      color: $active-color;
+    }
+  }
+
+  @media(hover: hover) {
+    &:hover {
+      svg {
+        path {
+          fill: $active-color;
+        }
+      }
+    }
+  }
+
+  @include smartphone {
+    padding: 3px 13px;
+  }
+}
